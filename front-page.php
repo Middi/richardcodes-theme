@@ -11,6 +11,9 @@ get_header();
 ?>
 
 <main>
-<h1>Hello home page</h1>
+    <div class="hero">
+        <div class="container">
+        </div>
+    </div>
 </main>
 <?php get_footer();

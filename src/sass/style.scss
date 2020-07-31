@@ -7,18 +7,19 @@
 @import 'colors';
 @import 'nav';
 @import 'typography';
+@import 'hero';
 @import 'blog';
 @import 'cards';
 @import 'footer';
 
-// html, body, main, #page {
-//     height: 100%;
-//     background-color: $white;
-// }
+html, body, main, #page {
+    height: 100%;
+    background-color: $white;
+}
 
-// main { margin-top: 53px }
+main { margin-top: 53px }
 
-// .container {
-//     max-width: 1000px;
-//     margin: 0 auto;
-// }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}

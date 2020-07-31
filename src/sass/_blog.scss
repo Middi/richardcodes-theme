@@ -13,14 +13,18 @@
     .title {padding: 30px 0 10px}
 
     a {word-break: break-all}
+
     figure {
         margin: 0;
         margin-bottom: 8px;
         width: 100%;
         border: 1px solid lighten($black, 80);
-        padding-bottom: 56.25%;
     }
-    ol {padding-left: 48px}
+
+    ul, ol {
+        margin: 1.5rem 4rem;
+    }
+
     img {
         display: block;
         height: auto;
@@ -67,7 +71,6 @@
 .article-container .avatar {
     border: none;
 }
-
 
 @media all and (max-width: 450px) {
     .article-container {

@@ -1,3 +1,4 @@
+
 header {
 	background: white;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -6,6 +7,9 @@ header {
 	left: 0;
 	right: 0;
 	padding: 0.5rem 1rem;
+	.admin-bar & {
+		top: 32px;
+	}
 }
 
 .logoNav {
@@ -65,6 +69,13 @@ header {
 
 .nav-toggle:hover img {
 	opacity: 0.6;
+}
+
+
+@media all and (max-width: 782px) {
+	.admin-bar header {
+		top: 46px;
+	}
 }
 
 /* Mobile */

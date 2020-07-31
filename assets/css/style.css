@@ -1,4 +1,4 @@
-ul{padding:0;margin:0}
+ul,ol{padding:0;margin:0}
 body{margin:0}
 input,select{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 .menu-toggle,.main-navigation.toggled ul{display:block}
@@ -44,6 +44,7 @@ embed,iframe,object{max-width:100%}
 .gallery-caption{display:block}
 .editor-post-title__input{font-family:"Open Sans",sans-serif;font-weight:700}
 header{background:white;border-bottom:1px solid rgba(0,0,0,0.15);position:absolute;top:0;left:0;right:0;padding:.5rem 1rem}
+.admin-bar header{top:32px}
 .logoNav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .logoNav a{margin:0;line-height:0}
 .logoNav img{height:40px}
@@ -80,12 +81,13 @@ blockquote cite{font-family:"Lora",serif;color:#21759b}
 .text-center{text-align:center}
 small span{font-size:1rem;line-height:1}
 pre{white-space:pre-wrap;word-break:break-word;word-wrap:break-word;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}
+.hero{background:url("/wp-content/themes/richardcodes/assets/img/hero-bg.png") repeat;height:600px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .bg-wrapper{height:100%;margin-top:49px}
 .article-container{max-width:680px;margin:0 auto;padding:0 20px 140px;display:block;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
 .article-container .title{padding:30px 0 10px}
 .article-container a{word-break:break-all}
-.article-container figure{margin:0;margin-bottom:8px;width:100%;border:1px solid rgba(204,204,204,0.84);padding-bottom:56.25%}
-.article-container ol{padding-left:48px}
+.article-container figure{margin:0;margin-bottom:8px;width:100%;border:1px solid rgba(204,204,204,0.84)}
+.article-container ul,.article-container ol{margin:1.5rem 4rem}
 .article-container img{display:block;height:auto;max-width:100%;border:1px solid rgba(204,204,204,0.84)}
 .article-container .view-buttons-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .article-meta{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:20px 0 40px}
@@ -120,9 +122,13 @@ footer .logo{height:80px;margin:20px 0}
 footer:before{position:absolute;content:"";background-position:center bottom;background-size:100% auto;background-repeat:no-repeat;pointer-events:none;top:-138px;height:140px;left:0;right:0}
 .footer-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .footer-links h5{text-align:center;color:white}
+html,body,main,#page{height:100%;background-color:#fefefe}
+main{margin-top:53px}
+.container{max-width:1000px;margin:0 auto}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }@media(max-width:861px){.logo{height:23px;margin-bottom:6px}
+}@media all and (max-width:782px){.admin-bar header{top:46px}
 }@media(max-width:767px){.logo{height:36px}
 }@media all and (max-width:720px){.container{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
 .logoNav{width:100%}
